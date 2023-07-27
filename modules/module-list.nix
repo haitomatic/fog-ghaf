@@ -6,6 +6,7 @@
   ./development/debug-tools.nix
   ./development/nix.nix
   ./development/ssh.nix
+  ./development/tailscale.nix
   ./graphics
   ./hardware/x86_64-linux.nix
   ./profiles/applications.nix

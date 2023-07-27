@@ -47,7 +47,7 @@
             ghaf = {
               hardware.nvidia.orin.enable = true;
               hardware.nvidia.orin.somType = som;
-
+              virtualization.docker.daemon.enable = true;
               virtualization.microvm-host.enable = true;
               host.networking.enable = true;
               virtualization.microvm.netvm = {

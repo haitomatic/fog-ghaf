@@ -18,6 +18,16 @@ in
         enableIPv6 = false;
         useNetworkd = true;
         interfaces.virbr0.useDHCP = false;
+        # interfaces.enP8p1s0 = {
+        #   useDHCP = false;
+        #   ipv4.addresses = [
+        #     {
+        #       address ="192.168.248.2";
+        #       prefixLength = 24;
+        #     }
+        #   ];
+        # };
+        # defaultGateway.address = "192.168.248.1";
       };
 
       systemd.network = {
