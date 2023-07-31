@@ -28,6 +28,7 @@ in
           ];
         };
         defaultGateway.address = "192.168.248.1";
+        nameservers = ["1.1.1.1" "8.8.8.8" "8.8.4.4" ];
       };
 
       systemd.network = {
