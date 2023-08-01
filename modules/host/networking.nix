@@ -22,10 +22,25 @@ in
           useDHCP = false;
           ipv4.addresses = [
             {
-              address ="192.168.248.2";
+              address ="192.168.248.16";
               prefixLength = 24;
             }
           ];
+        };
+        interfaces.enP8p1s0 = {
+          useDHCP = false;
+          ipv4.addresses = [
+            {
+              address ="192.168.200.100";
+              prefixLength = 24;
+            }
+          ];
+        };
+        hosts = {
+        "127.0.1.1" = [ "ghaf-host" ];
+        "127.0.0.2" = [ "ghaf-host" ];
+        "192.168.200.100" = [ "ghaf-host" ];
+        "192.168.248.16" = [ "ghaf-host" ];
         };
         defaultGateway.address = "192.168.248.1";
         nameservers = ["1.1.1.1" "8.8.8.8" "8.8.4.4" ];
