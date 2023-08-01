@@ -25,11 +25,6 @@ in
               address ="192.168.248.16";
               prefixLength = 24;
             }
-          ];
-        };
-        interfaces.enP8p1s0 = {
-          useDHCP = false;
-          ipv4.addresses = [
             {
               address ="192.168.200.100";
               prefixLength = 24;
